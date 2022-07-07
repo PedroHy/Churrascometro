@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="assets/carne-icon.png" type="image/x-icon">
+    
+    <title>Churrascometro</title>
+</head>
+<body>
+    
+    <div id="img_container">
+        <div id="overlay">
+            <p id="phrase">Calcule a quantidade certa de produtos para o seu churrasco...</p>
+        </div>
+    </div>
+    <div id="form_container">
+        <div id="logo">
+            <img src="assets/chef-icon.png" alt="icone de um chapeu de chefe de cozinha com um grafo e uma colher se cruzando abaixo">
+        </div>
+
+        <form>
+            <p class="question">Quantos adultos irão?</p>
+            <input type="number" class="answer" id="adults">
+            <p class="question">Quantas crianças irão?</p>
+            <input type="number" class="answer" id="childrens">
+            <p class="question">Quanto tempo vai durar?(hr)</p>
+            <input type="number" class="answer" id="time">
+        </form>
+
+        <input type="button" value="Calcular" id="btn">
+
+        <h2 id="title-h2">Serão necessários:</h2>
+
+        <div id="result">
+
+            <div>
+                <img src="assets/carne-icon.png" alt="icone de um pernil">
+                <span class="calc" id="meet">-- Kg de carne</span>
+            </div>
+
+            <div>
+                <img src="assets/beer-icon.png" alt="icone de uma caneca de cerveja">
+                <span class="calc" id="beer">-- Latas de cerveja</span>
+            </div>
+
+            <div>
+                <img src="assets/soda-icon.png" alt="icone de um copo de canudo descartavel de refrigerante">
+                <span class="calc" id="soda">-- Garrafas de refrigerante</span>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

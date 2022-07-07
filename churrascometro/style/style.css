@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-size: 62.5%;
+    font-family: 'Century Gothic', Arial, Helvetica, sans-serif;
+}
+
+#img_container{
+    float: right;
+    width: 65vw;
+    height: 100vh;
+    background: url("../assets/barbacue.jpg");
+    background-size: cover;
+}
+
+#overlay{
+    float: right;
+    width: 65vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.548);
+}
+
+#phrase {
+    padding: 15rem 4rem;
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+}
+
+#form_container{
+    background-color: #FF7970;
+    color: white;
+    
+    height: 90vh;
+    width: 35vw;
+
+    padding: 5vh 0;
+
+    position: relative;
+}
+
+#logo{
+    font-size: 4rem;
+    padding-top: 5rem;
+}
+
+#logo img{
+    display: block;
+    margin: auto;
+    width: 25rem;
+}
+
+form{
+    margin: 1rem;
+    text-align: center;
+}
+
+.question{
+    font-size: 1.5rem;
+}
+
+.answer{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#btn{
+    padding: 1rem;
+    display: block;
+    margin: 2rem auto;
+    background-color: yellow;
+    
+    width: 10rem;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 10rem;
+
+}
+
+#btn:hover{
+    padding: 1.2rem;
+    color: rgb(17, 17, 17);
+
+}
+
+#title-h2{
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+#result{
+    font-size: 3.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#result div{
+    margin: 0.5rem;
+}
+
+#result img{
+    width: 2rem;
+    
+}
+
+@media(max-width: 950px) {
+    #img_container{
+        float: none;
+        width: 100vw;
+        height: 30vh;
+    }
+
+    #overlay{
+        width: 100vw;
+        height: 30vh;
+    }
+
+    #phrase {
+        padding:4rem;
+        font-size: 3rem;
+
+    }
+
+    #form_container{
+        width: 100vw;
+    }
+}
